@@ -57,7 +57,7 @@
 						<td>{{$stage->notes}}</td>
 						<td>
                             <!-- The id  ( $stage->id ) controlled in the form update and don't send the id with route update. 
-                             
+                        
                             Pass the ID of the modal to open the modal according to the ID of the element
                             -->
 							<a href="" class="btn btn-primary"  data-toggle="modal"

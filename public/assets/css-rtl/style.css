@@ -98,6 +98,29 @@ License        :   Licensed under ThemeForest License
   font-size:15px;
 }
 
+/* accordion in sections */
+.HJ_accordion_btn{
+  width:200px;
+  font-size:15px;
+  padding:10px;
+  border:none;
+  outline:none;
+  margin-bottom:10px;
+
+}
+.HJ_accordion_btn:focus{
+  border:none;
+  outline:none;
+}
+.HJ_section{
+  width:70%;
+}
+
+/* status in sections */
+.HJ_status_lable{
+  margin-right:20px;
+}
+
 
 /* ######## FONT ######## */
 /* ############### FONTS IMPORT ############### */

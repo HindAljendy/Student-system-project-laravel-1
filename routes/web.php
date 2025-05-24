@@ -67,6 +67,13 @@ function()
 
     Route::controller(SectionController::class)->group(function(){
         Route::get('/sections','index')->name('sections.index');
+        Route::post('/sections','store')->name('sections.store');
+
+        /* route for display the classrooms when change the select "stage_id" */
+        Route::get('/all_classrooms/{stage_id}','getAllClassrooms');
+
+        Route::put('/sections','update')->name('sections.update');
+        Route::delete('/sections','destroy')->name('sections.destroy');
 
     });
 

@@ -19,6 +19,9 @@
 @endif@yield('css')
 
 <!--- Style css -->
+//! css wizard 
+<link href="{{URL::asset('wizard/wizard.css')}}" rel="stylesheet" id="bootstrap-css">
+
 //!  customise css Style to combitable with arabic and english Css files: in assets (css , css-rtl)
 @if (App::getLocale() == 'en')
 <link href="{{URL::asset('assets/css/style.css')}}" rel="stylesheet">

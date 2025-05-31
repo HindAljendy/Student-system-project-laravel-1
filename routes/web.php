@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\StageController;
+use App\Http\Controllers\ParentController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\ClassroomController;
 
@@ -76,6 +77,11 @@ function()
         Route::delete('/sections','destroy')->name('sections.destroy');
 
     });
+    
+    // Route view : Url , View 
+    Route::view('add_parent', 'livewire.show-form');
+
+
 
 
 

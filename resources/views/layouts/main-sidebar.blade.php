@@ -50,6 +50,15 @@
 							<li><a class="slide-item" href="{{ route('sections.index') }}">{{trans('sections_trans.list_sections')}} </a></li>
 						</ul>
 					</li>
+					<!-- Start with my parents اولياءالامور -->
+					<li class="slide">
+						<a class="side-menu__item" data-toggle="slide" href="#">
+							<span class="side-menu__label">{{trans('parents_trans.title_page')}}</span><i class="angle fe fe-chevron-down"></i></a>
+						<ul class="slide-menu">
+							<li><a class="slide-item" href="#">{{trans('parents_trans.list_parents')}} </a></li>       
+							<li><a class="slide-item" href="{{ url('add_parent')}}">{{trans('parents_trans.add_parent')}} </a></li>       
+						</ul>
+					</li>
 					
 				
 					

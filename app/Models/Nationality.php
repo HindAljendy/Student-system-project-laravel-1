@@ -14,4 +14,16 @@ class Nationality extends Model
 
     public $translatable = ['nationality_name'];
 
+    //!  one to many Relationship between my__parents , nationalities :
+    // علاقة الأب بالجنسية
+    public function fathers(){
+        return $this->hasMany(My_Parent::class , 'Nationality_Father_id' , 'id');
+    }
+
+    // علاقة الام بالجنسية
+    public function mothers(){
+        return $this->hasMany(My_Parent::class , 'Nationality_Mother_id' , 'id');
+    }
+ 
+
 }
